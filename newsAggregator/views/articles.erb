@@ -1,0 +1,11 @@
+<ul>
+  <% @articles.each do |article| %>
+  <li>
+    <a href="<%= article[0] %>" title="<%= article[0] %>" target="_blank"><%= article[1] %></a>
+    <br>
+    <p>
+      <%= article[2] %>
+    </p>
+  </li>
+  <% end %>
+</ul>
